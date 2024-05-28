@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="./css/Sobre.css">
+</head>
+<body>
+    <header>
+        
+       <a href="./Principal.html"> <img class="logotipo" src="img/imglri.jpg" alt=""></a>
+        <nav>
+            <ul>
+                <li><a href="#team">Equipe</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="team">
+            <h2>Conheça a Nossa Equipe</h2>
+
+            <article class="team-member">
+                <img src="img/Imagemigor.jpg" alt="Foto de igorbarrocal">
+                <div>
+                    <h3>Igor Dias Barrocal</h3>
+                    <p>RM: 555217</p>
+                    
+                    <p>Git Hub: <a href="https://github.com/igorbarrocal"><img src="img/github.png" alt=""></a><a href="https://www.instagram.com/igorbarrocal/"><img src="img/insta(2).jpg" alt=""></a></p>
+                </div>
+            </article>
+
+            <article class="team-member">
+                <img src="img/Imagemluis (1).jpg" alt="Foto de luis-hsl">
+                <div>
+                    <h3>Luis Lima </h3>
+                    <p>RM: 556904</p>
+                    
+                    <p>Git Hub: <a href="https://github.com/luis-hsl"><img src="img/github.png" alt=""></a><a href="https://www.instagram.com/luislimaaa_/"><img src="img/insta(2).jpg" alt=""></a></p>
+                </div>
+            </article>
+            
+            <article class="team-member">
+                <img src="img/1713518210939.jpeg" alt="Foto de renanboucault">
+                <div>
+                    <h3>Renan Dorneles</h3>
+                    <p>RM: 557820</p>
+                    <p>Git Hub: <a href="https://github.com/Renann77"><img src="img/github.png" alt=""></a><a href="https://www.instagram.com/renanboucault/"><img src="img/insta(2).jpg" alt=""></a></p>
+                </div>
+            </article>
+
+        </section>
+
+        <aside>
+            <section id="contact">
+                <h2>Fale Conosco</h2>
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sobre Nós. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
