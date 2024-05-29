@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/Clima.css" />
+  <title>Temperatura Oceano</title>
+</head>
+
+<header>
+    <h1>Clima nas cidades proximas dos nos Oceanos</h1>
+    <nav>
+        <ul>
+            <li><a href="#overview">Visão Geral</a></li>
+            <li><a href="#causes">Causas</a></li>
+            <li><a href="#effects">Efeitos</a></li>
+            <li><a href="#solutions">Nossa Solução</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+  <div class="container-fluid p-0 container-sm d-flex justify-content-center">
+
+    <div class="card text-center shadow-lg" style="width: 26rem;">
+
+      <div class="card-header bg-white text-dark font-weight-bold">
+        TEMPO E TEMPERATURA
+      </div>
+
+      <div class="card-body">
+        <div class="city">Cidade Exemplo, BR</div>
+        <div class="date">Data</div>
+        <div class="container-img">
+          <img src="">
+        </div>
+        <div class="container-temp mx-4 my-3">
+          <div>22</div>
+          <span>°c</span>
+        </div>
+        <div class="weather py-2">Estado Do Tempo</div>
+        <div class="low-high">Graus °c</div>
+      </div>
+
+      <div class="card-footer bg-white">
+        <div class="input-group ">
+          <input type="text" class="form-control bg-light" placeholder="digite o nome da cidade" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-outline-warning text-dark" type="button" id="button-addon2">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="./JavaScript/Clima.js"></script>
+  <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
