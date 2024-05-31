@@ -1,48 +1,31 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+function validarFormulario() {
+  var telefone = document.getElementById("telefone").value;
+  var email = document.getElementById("email").value;
+  var senha = document.getElementById("senha").value;
 
-    // Get form elements
-    const fullName = document.getElementById('fullName');
-    const email = document.getElementById('email');
-    const phone = document.getElementById('phone');
-    const password = document.getElementById('password');
+  // Expressão regular para validar números de telefone
+  var regexTelefone = /^\d{10}$/;
 
-    // Validate form fields
-    let isValid = true;
+  // Expressão regular para validar endereços de e-mail
+  var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (fullName.value.trim() === '') {
-      fullName.classList.add('is-invalid');
-      isValid = false;
-    } else {
-      fullName.classList.remove('is-invalid');
-    }
+  // Expressão regular para validar senhas
+  var regexSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email.value)) {
-      email.classList.add('is-invalid');
-      isValid = false;
-    } else {
-      email.classList.remove('is-invalid');
-    }
+  if (!regexTelefone.test(telefone)) {
+      alert("Número de telefone inválido.");
+      return false;
+  }
 
-    if (phone.value.trim() === '') {
-      phone.classList.add('is-invalid');
-      isValid = false;
-    } else {
-      phone.classList.remove('is-invalid');
-    }
+  if (!regexEmail.test(email)) {
+      alert("Endereço de e-mail inválido.");
+      return false;
+  }
 
-    if (password.value.trim() === '') {
-      password.classList.add('is-invalid');
-      isValid = false;
-    } else {
-      password.classList.remove('is-invalid');
-    }
+  if (!regexSenha.test(senha)) {
+      alert("Senha inválida. Deve conter pelo menos 8 caracteres, incluindo pelo menos um número, uma letra minúscula e uma letra maiúscula.");
+      return false;
+  }
 
-    // If form is valid, submit it
-    if (isValid) {
-      alert('Formulário enviado com sucesso!');
-      // Aqui você pode adicionar a lógica para enviar o formulário, por exemplo, usando AJAX.
-      // document.getElementById('registerForm').submit();
-    }
-  });
+  return true;
+}
