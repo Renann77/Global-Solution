@@ -1,88 +1,124 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: "Inter-Regular", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    
+    background-color: #f0f0f0;
 }
 
 header {
-    background-image: url("../img/oceano\ nav\ .jpg");
-    color: #ffffff;
-    padding: 1rem 0;
-    text-align: center;
-    
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1b657c;
+    position: relative;
+}
 
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.image .fundo-da-pagina {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
 }
 
 nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
 }
 
 main {
-    padding: 1rem;
+    padding: 20px;
 }
 
-h2 {
-    border-bottom: 2px solid #0073e6;
-    padding-bottom: 0.5rem;
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-article {
-    margin-bottom: 2rem;
+.intro .section {
+    width: 60%;
+    height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-article img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem 0;
-}
-
-aside {
-    margin-top: 2rem;
-}
-
-form {
+.intro .solution {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 35%;
 }
 
-form label {
-    margin-top: 1rem;
+.intro .solution img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-form input, form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-form button {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background: #0073e6;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    background: #0073e6;
-    color: #fff;
+.intro .solution .label {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #000;
     text-align: center;
-    padding: 1rem 0;
 }
 
+.content .card {
+    display: flex;
+    background-color: #1b657c;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.content .card img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.content .card .text {
+    padding: 20px;
+    color: #ffffff;
+    width: 50%;
+}
+
+.content .card .text h2 {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.content .card .text p {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.content .card .text strong {
+    font-weight: bold;
+}
