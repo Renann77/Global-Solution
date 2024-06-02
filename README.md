@@ -30,8 +30,5 @@ Se você está interessado em contribuir com nosso projeto, aqui estão algumas 
   
 4. **Divulgação:** Ajude a espalhar a palavra sobre nosso projeto nas redes sociais, escolas e comunidades locais.
 
-## Contato
-
-Para mais informações sobre como se envolver ou para entrar em contato conosco, visite nosso site em [www.conscientizacao-oceanos.com](www.conscientizacao-oceanos.com) ou envie um e-mail para info@conscientizacao-oceanos.com.
 
 Obrigado por apoiar nossa missão de proteger e preservar os oceanos para as gerações futuras!
