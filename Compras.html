@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossa Loja de Materiais Biodegradáveis</title>
+    <link rel="stylesheet" href="./css/Compras.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Materiais Biodegradáveis</h1>
+        <nav>
+            <ul>
+                <li><a href="./Denunciasbot.html">Denúncias</a></li>
+                <li><a href="./Sobre.html">Sobre nós</a></li>
+                <li><a href="./Clima.html">Clima</a></li>
+                <li><a href="./Solucao.html">Nossa Solução</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <article>
+                <p>Nossa missão é combater a poluição nos oceanos oferecendo também uma ampla gama de produtos biodegradáveis. Cada compra ajuda a preservar a vida marinha e manter nossos oceanos limpos.</p>
+                <a href="./Sobre.html"><img class="logo" src="img/imglri.jpg" alt="Sobre nossa loja de materiais biodegradáveis"></a>
+            </article>
+        </section>
+
+        <section id="products">
+            <h2>Nossos Produtos</h2>
+            <article class="product">
+                <h3>Garfos Descartavéis e biodegradáveis</h3>
+                <img src="./img/shopping.webp" alt="Sacolas Biodegradáveis">
+                <p>Preço: R$ 15,00</p>
+                <button onclick="addToCart('Sacolas Biodegradáveis', 15)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="product">
+                <h3>Canudos de Papel Kraft</h3>
+                <img src="./img/shopping (1).webp" alt="Canudos de Papel">
+                <p>Preço: R$ 10,00</p>
+                <button onclick="addToCart('Canudos de Papel', 10)">Adicionar ao Carrinho</button>
+            </article>
+            <article class="product">
+                <h3>Copos Ecológicos</h3>
+                <img src="img/shopping (2).webp" alt="Copos de Bambu">
+                <p>Preço: R$ 20,00</p>
+                <button onclick="addToCart('Copos de Bambu', 20)">Adicionar ao Carrinho</button>
+            </article>
+            <!-- Adicione mais produtos conforme necessário -->
+        </section>
+
+        <aside id="cart">
+            <h2>Carrinho de Compras</h2>
+            <div id="cart-items">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <p>Total: R$ <span id="total">0.00</span></p>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </aside>
+    </main>
+                <p>O Sistema de Carrinho foi feito pela matéria Computacional Thinking Using Python.</p>
+    <footer>
+       
+        <p>&copy; 2024 Loja de Materiais Biodegradáveis. Todos os direitos reservados.</p>
+    </footer>
+
+ 
+</body>
+</html>

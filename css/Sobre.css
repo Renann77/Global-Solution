@@ -95,3 +95,8 @@ footer {
     height: 1,5px;
 }
 
+.conteudo {
+background-image: url("../img/CARD\ 1.jpg");
+color: #fff;
+font-family:'Times New Roman', Times, serif;
+}
