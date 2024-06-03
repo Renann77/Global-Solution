@@ -1,31 +1,22 @@
-function validarFormulario() {
-var telefone = document.getElementById("telefone").value;
-var email = document.getElementById("email").value;
-var senha = document.getElementById("senha").value;
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
-  // Expressão regular para validar números de telefone
-var regexTelefone = /^\d{10}$/;
+  const registerUsername = document.getElementById('registerUsername').value;
+  const registerEmail = document.getElementById('registerEmail').value;
+  const registerPhone = document.getElementById('registerPhone').value;
+  const registerPassword = document.getElementById('registerPassword').value;
 
-  // Expressão regular para validar endereços de e-mail
-var regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  // Armazenar as informações de registro em localStorage
+  localStorage.setItem('registeredUsername', registerUsername);
+  localStorage.setItem('registeredEmail', registerEmail);
+  localStorage.setItem('registeredPhone', registerPhone);
+  localStorage.setItem('registeredPassword', registerPassword);
 
-  // Expressão regular para validar senhas
-var regexSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  alert('Registro bem-sucedido!');
 
-if (!regexTelefone.test(telefone)) {
-    alert("Número de telefone inválido.");
-    return false;
-}
+    window.location.href = 'Login.html';
+  // Limpar campos de registro
+  document.getElementById('registerForm').reset();
 
-if (!regexEmail.test(email)) {
-    alert("Endereço de e-mail inválido.");
-    return false;
-}
 
-if (!regexSenha.test(senha)) {
-    alert("Senha inválida. Deve conter pelo menos 8 caracteres, incluindo pelo menos um número, uma letra minúscula e uma letra maiúscula.");
-    return false;
-}
-
-return true;
-}
+});

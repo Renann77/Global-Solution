@@ -5,6 +5,8 @@ document.getElementById('loginBtn').addEventListener('click', function(event) {
     const password = document.getElementById('password').value;
     const rememberMe = document.getElementById('rememberMe').checked;
 
+    
+
     // Simulando uma verificação de login bem-sucedida
     if (username === 'admin' && password === 'admin') {
         if (rememberMe) {
@@ -27,3 +29,4 @@ window.onload = function() {
         document.getElementById('rememberMe').checked = true;
     }
 };
+
