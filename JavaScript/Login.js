@@ -1,32 +1,23 @@
-document.getElementById('loginBtn').addEventListener('click', function(event) {
+document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    const rememberMe = document.getElementById('rememberMe').checked;
-
-    
-
-    // Simulando uma verificação de login bem-sucedida
-    if (username === 'admin' && password === 'admin') {
-        if (rememberMe) {
-            localStorage.setItem('username', username);
-            localStorage.setItem('password', password);
-        }
-        alert('Login bem-sucedido!');
-        // Redirecionar para a página inicial ou dashboard
-        window.location.href = 'index.html';
+  
+    const loginUsername = document.getElementById('loginUsername').value;
+    const loginPassword = document.getElementById('loginPassword').value;
+  
+    // Recuperar as informações de registro do localStorage
+    const registeredUsername = localStorage.getItem('registeredUsername');
+    const registeredPassword = localStorage.getItem('registeredPassword');
+  
+    // Verificar se o nome de usuário e a senha correspondem aos registrados
+    if (loginUsername === registeredUsername && loginPassword === registeredPassword) {
+      alert('Login bem-sucedido!');
+      // Redirecionar o usuário para a página de perfil, por exemplo
+      window.location.href = 'Principal.html';
     } else {
-        alert('Usuário ou senha incorretos.');
+      alert('Nome de usuário ou senha incorretos. Por favor, tente novamente.');
     }
-});
-
-// Preencher os campos se o usuário escolheu "Lembre de mim" anteriormente
-window.onload = function() {
-    if (localStorage.getItem('username') && localStorage.getItem('password')) {
-        document.getElementById('username').value = localStorage.getItem('username');
-        document.getElementById('password').value = localStorage.getItem('password');
-        document.getElementById('rememberMe').checked = true;
-    }
-};
-
+  
+    // Limpar campos de login
+    document.getElementById('loginForm').reset();
+  });
+  
