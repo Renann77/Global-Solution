@@ -1,3 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot de Denúncias - Poluição nos Oceanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chatbot de Denúncias</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#report">Denunciar</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Sobre o Chatbot de Denúncias</h2>
+            <article>
+                <p>Nosso chatbot de denúncias foi criado para ajudar na luta contra a poluição nos oceanos. Aqui você pode reportar incidentes de poluição que encontrar, como despejo de lixo, derramamento de óleo e outras atividades prejudiciais ao meio ambiente marinho.</p>
+                <img src="images/ocean_pollution_chatbot.jpg" alt="Chatbot de denúncias de poluição nos oceanos">
+            </article>
+        </section>
+
+        <section id="report">
+            <h2>Denunciar Poluição</h2>
+            <article>
+                <p>Use o chatbot abaixo para reportar um incidente de poluição. Forneça o máximo de detalhes possível para que possamos tomar as medidas apropriadas.</p>
+                <div id="chatbot">
+                    <div id="chat-window">
+                        <div id="chat-output"></div>
+                    </div>
+                    <input type="text" id="user-input" placeholder="Digite sua mensagem aqui...">
+                    <button onclick="sendMessage()">Enviar</button>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <section id="contact">
+                <h2>Contato</h2>
+                <form action="submit_contact.php" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Chatbot de Denúncias - Poluição nos Oceanos. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
 <script>
     window.watsonAssistantChatOptions = {
       integrationID: "8f910999-a943-4f42-97de-8cd540b7c543", // The ID of this integration.

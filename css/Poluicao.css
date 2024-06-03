@@ -16,9 +16,9 @@ body {
   font-family: "Poppins", sans-serif;
 }
 section.card {
-  background: #000046;
-  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
-  background: linear-gradient(to right, #1CB5E0, #000046);
+  background: #47ebcf;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #03a049); 
+  background: linear-gradient(to right, #1ce095, #1de677);
   border-radius: 24px 24px 24px 48px;
   padding: 48px 48px 48px 308px;
   margin: 84px 0;
@@ -54,7 +54,7 @@ section.card .text-content a {
   transition: 400ms all;
 }
 section.card .text-content a:hover {
-  background: #051c5e;
+  background: #09df8d;
   color: white;
 }
 section.card .visual {
@@ -123,7 +123,7 @@ article {
 }
 
 header {
-    background-image: url("../img/oceano\ nav\ .jpg");
+    background-image: url("../img/poluicao.webp");
     color: #ffffff;
     padding: 1rem 0;
     text-align: center;
@@ -145,14 +145,4 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-footer {
-  background: #0042f8;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  width: 100%;
-  bottom: 0;
-  height: 1,5px;
 }
