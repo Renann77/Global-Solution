@@ -1,23 +1,31 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-  
-    const loginUsername = document.getElementById('loginUsername').value;
-    const loginPassword = document.getElementById('loginPassword').value;
-  
-    // Recuperar as informações de registro do localStorage
-    const registeredUsername = localStorage.getItem('registeredUsername');
-    const registeredPassword = localStorage.getItem('registeredPassword');
-  
-    // Verificar se o nome de usuário e a senha correspondem aos registrados
-    if (loginUsername === registeredUsername && loginPassword === registeredPassword) {
-      alert('Login bem-sucedido!');
-      // Redirecionar o usuário para a página de perfil, por exemplo
-      window.location.href = 'Principal.html';
-    } else {
-      alert('Nome de usuário ou senha incorretos. Por favor, tente novamente.');
-    }
-  
-    // Limpar campos de login
-    document.getElementById('loginForm').reset();
+document.addEventListener("DOMContentLoaded", function() {
+  const loginBtn = document.getElementById("loginBtn");
+
+  // Adiciona um ouvinte de evento para o botão de login
+  loginBtn.addEventListener("click", function(event) {
+      event.preventDefault(); // Evita o envio do formulário
+
+      // Obtém os valores de entrada do usuário
+      const username = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      const rememberMe = document.getElementById("rememberMe").checked;
+
+      // Verifica se o usuário deseja lembrar das credenciais
+      if (rememberMe) {
+          // Armazena os dados no localStorage
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
+          localStorage.setItem("rememberMe", rememberMe);
+      } else {
+          // Se não, limpa os dados do localStorage
+          localStorage.removeItem("username");
+          localStorage.removeItem("password");
+          localStorage.removeItem("rememberMe");
+      }
+
+      // Redireciona para a página de início ou faz outra ação, conforme necessário
+       window.location.href = "Principal.html";
+      // ou
+      // Alguma outra ação após o login
   });
-  
+});

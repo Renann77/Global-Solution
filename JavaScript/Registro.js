@@ -7,10 +7,10 @@ document.getElementById('registerForm').addEventListener('submit', function(even
   const registerPassword = document.getElementById('registerPassword').value;
 
   // Armazenar as informações de registro em localStorage
-  localStorage.setItem('registeredUsername', registerUsername);
-  localStorage.setItem('registeredEmail', registerEmail);
-  localStorage.setItem('registeredPhone', registerPhone);
-  localStorage.setItem('registeredPassword', registerPassword);
+  localStorage.setItem('registerUsername', registerUsername);
+  localStorage.setItem('registerEmail', registerEmail);
+  localStorage.setItem('registerPhone', registerPhone);
+  localStorage.setItem('registerPassword', registerPassword);
 
   alert('Registro bem-sucedido!');
 
