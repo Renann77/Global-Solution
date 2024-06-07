@@ -100,3 +100,9 @@ background-image: url("../img/CARD\ 1.jpg");
 color: #fff;
 font-family:'Times New Roman', Times, serif;
 }
+
+p{
+    text-align: center;
+    border-radius: 30%;
+    border-color: #000000;
+}
