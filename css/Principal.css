@@ -38,7 +38,7 @@ header {
 
 .video{
     width: 2200px;
-    height: 400px;
+    height: 200px;
 }
 
 nav ul {
@@ -58,6 +58,7 @@ nav ul li {
 
 main {
     padding: 20px;
+    background-color: #000;
 }
 
 .intro {
@@ -68,9 +69,8 @@ main {
 }
 
 .intro .section {
-    width: 60%;
-    height: 200px;
-    background-color: #ffffff;
+    width: 50%;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ main {
 .intro .solution .label {
     margin-top: 10px;
     font-size: 24px;
-    color: #000;
+    color: #ffffff;
     text-align: center;
 }
 
