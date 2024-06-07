@@ -1,5 +1,10 @@
 # Global-Solution
-
+    Igor Dias Barrocal
+    RM: 555217
+    Luis Lima
+    RM: 556904
+    Renan Dorneles
+    RM: 557820
 # Projeto de Conscientização e Combate à Poluição nos Oceanos
 
 Este é um projeto dedicado à conscientização e combate à poluição nos oceanos. Nosso objetivo é educar, inspirar e capacitar indivíduos e comunidades ao redor do mundo para agir em prol de um oceano mais limpo e saudável.
